@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> Calculator +______+ </title>
+<meta chartset = "utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+
+<form id="calculator" name="calculator">
+
+	<div class="header">		
+		<input type="text" name="screen" value="" class="screen borderR_tr borderR_tl">
+	</div>
+	
+	<div class="keys">
+    <input type="button" value="C" onclick="clean()" class="clear">
+    <span class="blank"></span>
+		<span class="blank"></span>
+    <input type="button" value="/" onclick="calculate('/')" class="operator">
+    
+		<input type="button" value="7" onclick="calculate('7')">
+		<input type="button" value="8" onclick="calculate('8')">
+		<input type="button" value="9" onclick="calculate('9')">
+		<input type="button" value="*" onclick="calculate('*')" class="operator">
+		
+    <input type="button" value="4" onclick="calculate('4')">
+		<input type="button" value="5" onclick="calculate('5')">
+		<input type="button" value="6" onclick="calculate('6')">
+		<input type="button" value="-" onclick="calculate('-')" class="operator">
+		
+    <input type="button" value="1" onclick="calculate('1')">
+		<input type="button" value="2" onclick="calculate('2')">
+		<input type="button" value="3" onclick="calculate('3')">
+		<input type="button" value="+" onclick="calculate('+')" class="operator">
+    
+    <span class="blank borderR_bl"></span>
+		<input type="button" value="0" onclick="calculate('0')">
+		<span class="blank"></span>
+		<input type="button" value="=" onclick="equals()" class="equals borderR_br">
+	</div>
+
+</form>
+
+</body>
+</html>
+
+
