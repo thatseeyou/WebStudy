@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#calculator {
+    width: 12.34em;
+    margin: 1em auto;
+    border: 5px solid #ff7c87;
+    border-radius: .5em;
+    box-shadow: 0 2px 11px #aaa;
+    background-color: #fff;
+}
+
+.header {
+    width: 12em;
+}
+
+.header .screen {
+    height: 3em;
+    width: 100%;
+    padding-right: .8em;
+    float: right;
+    line-height: 3em;
+    text-align: right;
+    letter-spacing: 2px;
+    color: #EC9997;
+    font-size: 40px;
+    border: none;
+    background-color: none;
+    outline-width: 0;
+}
+
+.header, .keys {
+    overflow: hidden;
+}
+
+.keys input, .keys span {
+    float: left;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    color: #888;
+    line-height: 3em;
+    text-align: center;
+    transition: background-color .5s ease;
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.keys input:hover {
+    background: #EC9997;
+    color:#fff;
+}
+
+
+.keys span {
+    cursor: auto;
+}
+
+
+input.borderR_tl {
+    border-top-left-radius: .5em;
+}
+input.borderR_tr {
+    border-top-right-radius: .5em;
+}
+input.borderR_bl {
+    border-bottom-left-radius: .5em;
+}
+input.borderR_br {
+    border-bottom-right-radius: .5em;
+}
